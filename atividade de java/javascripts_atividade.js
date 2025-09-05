@@ -79,3 +79,43 @@ else if (n2 > n1 && n2 > n3){
 else{
     console.log (("terceiro numero é o maior" ))
 }
+
+let secreto = math.floor(math.random () * 100) +1;
+console.log(secreto)
+
+let tentativas2;
+while (tentativas !== secreto){
+    tentativas = Number(prompt("adivinhe o numero entre 1 e 100"))
+    if (tentativas > secreto){
+        alert("tente um numero menor!")
+        
+    }
+    else if (tentativas < secreto){
+            alert("tente um numero maior!")
+        }
+        else{
+            alert("voce acertou!!!!")
+        }
+}
+
+
+
+
+const valor = number(prompt("digite valor da compra:"));
+const desconto = 0.1
+if (number.isNaN(valor) || valor < 0){
+alert ("valor invalido")
+}
+else{
+    if(valor> 100){
+        const valordescon = valor * desconto;
+        console.log(`valor de final é ${valor-valordescon}`)
+
+    }
+     else{
+        console.log(`valor de final é ${valor}`)
+
+    }
+     
+
+}
